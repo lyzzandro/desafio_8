@@ -24,3 +24,89 @@
     );
     --gradient-red-yellow: linear-gradient(180deg, #ea5455 0%, #feb692 100%);
 }
+
+body {
+    background: var(--secondary-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+/*FONTES */
+h2 {
+    color: var(--white);
+    line-height: 160%;
+}
+
+p {
+    font-weight: 500;
+    color: var(--white);
+    line-height: 160%;
+    font-size: 14px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.dashboard-cards > div,
+.dashboard-bars {
+    background: var(--tertiary-black);
+    border-radius: 16px;
+    width: 200px;
+    height: 200px;
+}
+
+.dashboard-cards > div {
+    width: 350px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 48px;
+    gap: 32px;
+}
+
+.dashboard-cards > div div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.dashboard-cards > div div:first-of-type span {
+    color: var(--green);
+    font-size: 24px;
+    line-height: 160%;
+    font-weight: 600;
+}
+
+.dashboard-cards > div div:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard-cards > div div:last-of-type span {
+    color: var(--white);
+    font-size: 14px;
+    line-height: 160%;
+}
+
+.dashboard-bars {
+    width: 100%;
+    height: 314px;
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 32px;
+}
