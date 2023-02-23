@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --white: #fff;
+    --secondary-white: #d9d9d9;
+    --black: #1e1e1e;
+    --secondary-black: #292738;
+    --tertiary-black: #363447;
+    --quaternary-black: #4a4556;
+    --green: #81fbb8;
+    --gradient-green: linear-gradient(180deg, #81fbb8 0%, #28c76f 100%);
+    --secondary-gradient-green: linear-gradient(
+        180deg,
+        #90f7ec 0%,
+        #32ccbc 100%
+    );
+    --gradient-purple-orange: linear-gradient(
+        121.94deg,
+        #df9780 15.98%,
+        #a66de9 82.85%
+    );
+    --gradient-red-yellow: linear-gradient(180deg, #ea5455 0%, #feb692 100%);
+}
