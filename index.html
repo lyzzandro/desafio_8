@@ -14,55 +14,26 @@
         <link rel="stylesheet" href="./styles/style.css" />
     </head>
     <body>
-        <section class="content">
-            <div class="dashboard-cards">
-                <div>
-                    <h2>NPS geral</h2>
-                    <div>
-                        <img src="./assets/face.svg" alt="" />
-                        <span>Excelente!</span>
-                    </div>
-                    <div>
-                        <p>NPS Score</p>
-                        <span>75</span>
-                    </div>
+        <main id="app" class="grid">
+            <div class="box nps grid">
+                <div class="top">NPS geral</div>
+                <div class="middle grid">
+                    <img src="./assets/face.svg" alt="Rosto verde sorrindo" />
+                    Exelente
                 </div>
-                <div>
-                    <h2>Vendas fechadas</h2>
-                    <div>
-                        <img src="./assets/face.svg" alt="" />
-                        <span>Excelente!</span>
-                    </div>
-                    <div>
-                        <div>
-                            <p>NPS Score</p>
-                            <span>75</span>
-                        </div>
-                        <div>
-                            <p>NPS Score</p>
-                            <span>75</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>Meta mensal</h2>
-                    <div>
-                        <img src="./assets/face.svg" alt="" />
-                        <span>Excelente!</span>
-                    </div>
-                    <div>
-                        <div>
-                            <p>NPS Score</p>
-                            <span>75</span>
-                        </div>
-                        <div>
-                            <p>NPS Score</p>
-                            <span>75</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="bottom"><span>NPS Score</span> <span>75</span></div>
             </div>
-            <div class="dashboard-bars"></div>
-        </section>
+            <div class="box sell grid">
+                <div class="top">Vendas fechadas</div>
+                <div class="middle"></div>
+                <div class="botom"></div>
+            </div>
+            <div class="box target grid">
+                <div class="top">Metal mensal</div>
+                <div class="middle"></div>
+                <div class="botom"></div>
+            </div>
+            <!-- <div class="box"></div> -->
+        </main>
     </body>
 </html>
