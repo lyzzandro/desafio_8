@@ -21,17 +21,15 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS
-- Git e Github
-- Figma
+-   HTML e CSS
+-   Git e Github
+-   Figma
 
 ## 💻 Projeto
 
 O desafio 8 é uma dashboard que apresenta vários conceitos, principalmente de svg, grid e animações, tudo com CSS
 
-- [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
-
-- [Assistir aulas](https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito)
+-   [Acesse o projeto finalizado, online](https://lyzzandro.github.io/desafio_8/)
 
 ## 🔖 Layout
 
