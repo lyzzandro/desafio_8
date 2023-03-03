@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --white: #fff;
     --secondary-white: #d9d9d9;
@@ -40,6 +41,10 @@ body {
     display: grid;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .box {
     padding: 2.9rem 4.8rem;
     background: var(--tertiary-black);
@@ -70,7 +75,29 @@ body {
 .top {
     font-weight: 600;
     font-size: 2.4rem;
+}
+
+.middle {
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+
+.middle .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.content h3 {
+    font-size: 3.4rem;
+}
+
+.content p {
+    font-weight: 400;
+    line-height: 160%;
 }
 
 .bottom {
@@ -87,6 +114,7 @@ body {
     align-items: center;
     gap: 1rem;
 }
+
 .bottom .item span:nth-child(1) {
     display: flex;
     align-items: center;
@@ -126,11 +154,6 @@ body {
     gap: 1rem;
 }
 
-.middle {
-    display: grid;
-    place-content: center;
-}
-
 svg {
     --percentage: 0;
     width: 19rem;
@@ -159,5 +182,96 @@ svg circle:nth-child(2) {
     0% {
         stroke-dasharray: 618;
         stroke-dashoffset: 618;
+    }
+}
+
+.weekly-sell {
+    gap: 3.2rem;
+}
+
+.weekly-sell .wrapper {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.weekly-sell .left {
+    gap: 3.2rem;
+}
+
+.weekly-sell .left,
+.weekly-sell .right {
+    flex: 1;
+}
+
+.left .grid {
+    gap: 0.8rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+.left .grid span {
+    font-size: 1.4rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.left .grid span::before {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    clip-path: polygon(50% 0%, 0% 80%, 100% 80%);
+    background: var(--gradient-green);
+    display: block;
+}
+
+.left .most-sell span::before {
+    background: var(--gradient-green);
+}
+
+.left .less-sell span::before {
+    background: var(--gradient-red-yellow);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bars {
+    display: flex;
+    gap: 5.9rem;
+    align-items: flex-end;
+    position: relative;
+}
+
+.bars::before {
+    content: '';
+    display: block;
+    height: 0.3rem;
+    width: 100%;
+    background: var(--quaternary-black);
+    border-radius: 999px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bar-wrapper {
+    display: grid;
+    grid-template-rows: 15.9rem 1.6rem;
+    justify-items: center;
+    gap: 0.5rem;
+    z-index: 1;
+}
+
+.bar {
+    width: 1.5rem;
+    height: var(--height);
+    background: var(--secondary-gradient-green);
+    border-radius: 999px;
+    align-self: end;
+    animation: up 1.4s;
+}
+
+@keyframes up {
+    0% {
+        height: 0;
     }
 }
